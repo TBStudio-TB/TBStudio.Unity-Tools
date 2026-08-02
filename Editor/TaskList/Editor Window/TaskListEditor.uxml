@@ -1,30 +1,40 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
     <Style src="project://database/Packages/com.tbstudio.tools/Editor/TaskList/Editor%20Window/TaskListEditor.uss?fileID=7433441132597879392&amp;guid=96ab9b476fecf9f49b52b49b3cd879fa&amp;type=3#TaskListEditor"/>
-    <ui:VisualElement name="veLoadingTasks" class="container" style="flex-grow: 0;">
+
+    <!-- Fixed top containers -->
+    <ui:VisualElement name="veLoadingTasks" class="container" style="flex-shrink: 0;">
         <uie:ObjectField label="Load Saved Tasks:" name="objTaskList"/>
         <ui:Button text="Load Tasks" name="btnLoadList" class="btn"/>
     </ui:VisualElement>
-    <ui:VisualElement name="veSearchTasks" class="container">
+
+    <ui:VisualElement name="veSearchTasks" class="container" style="flex-shrink: 0;">
         <ui:Label text="Search Tasks" name="lblSearchHeader" class="header"/>
         <uie:ToolbarSearchField enabled="true" name="searchTasks" class="searchfield"/>
     </ui:VisualElement>
-    <ui:VisualElement name="veAddingTasks" class="container">
+
+    <!-- Fixed height input container -->
+    <ui:VisualElement name="veAddingTasks" class="container" style="flex-shrink: 0;">
         <ui:Label text="Add New Task" name="lblAddTaskHeader" class="header"/>
-        <ui:VisualElement name="veAddTask" style="flex-grow: 1; flex-direction: row;">
-            <ui:TextField label="" placeholder-text="New Task..." name="txtTask" class="txt"/>
-            <ui:Button text="Add" name="btnAddTask" enabled="true" class="btn--row"/>
+        <ui:VisualElement name="veAddTask" style="flex-direction: row; height: 20px;">
+            <ui:TextField label="" placeholder-text="New Task..." name="txtTask" class="txt" style="flex-grow: 1; height: 20px;"/>
+            <ui:Button text="Add" name="btnAddTask" enabled="true" class="btn--row" style="width: 80px; height: 20px;"/>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="veDisplayTasks" class="container expend" style="flex-basis: 0;">
+
+    <!-- Expanding middle container with ScrollView -->
+    <ui:VisualElement name="veDisplayTasks" class="container expend" style="flex-grow: 1; flex-shrink: 1; min-height: 100px;">
         <ui:Label text="Current Tasks" name="lblTaskListHeader" class="header" style="margin-bottom: 10px;"/>
-        <ui:ScrollView name="scrollTaskList" class="border" style="flex-grow: 1;"/>
+        <ui:ScrollView name="scrollTaskList" class="border" style="flex-grow: 1; flex-shrink: 1;"/>
     </ui:VisualElement>
-    <ui:VisualElement name="veTrackingTasks" class="container">
+
+    <!-- Fixed bottom containers -->
+    <ui:VisualElement name="veTrackingTasks" class="container" style="flex-shrink: 0;">
         <ui:Button text="Save Progress" name="btnSaveProgress" class="btn"/>
-        <ui:Label text="Progress" name="lblProgressHeader" class="header" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 10px;"/>
+        <ui:Label text="Progress" name="lblProgressHeader" class="header" style="padding: 0; margin-top: 10px;"/>
         <ui:ProgressBar value="0" title="---%" name="pbTasks" high-value="1"/>
     </ui:VisualElement>
-    <ui:VisualElement name="veNotifications" class="container">
+
+    <ui:VisualElement name="veNotifications" class="container" style="flex-shrink: 0;">
         <ui:Label text="Notification Text" name="lblNotification" class="border notification"/>
     </ui:VisualElement>
 </ui:UXML>
