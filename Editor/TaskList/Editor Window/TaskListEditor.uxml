@@ -15,7 +15,7 @@
             <ui:Button text="Add" name="btnAddTask" enabled="true" class="btn--row"/>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="veDisplayTasks" class="container expend">
+    <ui:VisualElement name="veDisplayTasks" class="container expend" style="flex-basis: 0;">
         <ui:Label text="Current Tasks" name="lblTaskListHeader" class="header" style="margin-bottom: 10px;"/>
         <ui:ScrollView name="scrollTaskList" class="border" style="flex-grow: 1;"/>
     </ui:VisualElement>
