@@ -2,7 +2,7 @@
 	"name": "TBStudio.Tools.Editor",
 	"rootnamespace": "TBStudio.Tools.Editor",
 	"references": [
-		"TBStudio.Tools",
+		"TBStudio.Tools"
 	],
 	"includePlatforms": [
 		"Editor"
