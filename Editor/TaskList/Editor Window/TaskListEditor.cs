@@ -5,7 +5,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace TBStudio.Tools.TaskList
+namespace TBStudio.Tools.Editor.TaskList
 {
     public class TaskListEditor : EditorWindow
     {

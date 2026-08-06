@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TBStudio.Tools.TaskList
+namespace TBStudio.Tools.Editor.TaskList
 {
     [CreateAssetMenu(fileName = "New Task List", menuName = "TB Studio Tools/Task List")]
     public class TaskListSO : ScriptableObject

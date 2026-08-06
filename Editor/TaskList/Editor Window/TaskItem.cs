@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace TBStudio.Tools.TaskList
+namespace TBStudio.Tools.Editor.TaskList
 {
     public class TaskItem : VisualElement
     {

@@ -1,3 +1,18 @@
 {
-	"name": "TBStudio.Tools.Editor"
+	"name": "TBStudio.Tools.Editor",
+	"rootnamespace": "TBStudio.Tools.Editor",
+	"references": [
+		"TBStudio.Tools",
+	],
+	"includePlatforms": [
+		"Editor"
+	],
+	"excludePlatforms": [],
+	"allowUnsafeCode": false,
+	"overrideReferences": false,
+	"precompiledReferences": [],
+	"autoReferenced": true,
+	"defineConstraints": [],
+	"versionDefines": [],
+	"noEngineReferences": false
 }
