@@ -2,6 +2,8 @@
 
 [![Unity](https://img.shields.io/badge/Unity-6000.0%2B-blue.svg)](https://unity.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![openupm](https://img.shields.io/npm/v/com.tbstudio.tools?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.tbstudio.tools/)
+[![openupm](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=downloads&query=%24.downloads&suffix=%2Fmonth&url=https%3A%2F%2Fpackage.openupm.com%2Fdownloads%2Fpoint%2Flast-month%2Fcom.tbstudio.tools)](https://openupm.com/packages/com.tbstudio.tools/)
 
 A tool with editor tools and ready to use modular systems.
 
@@ -22,7 +24,7 @@ A tool with editor tools and ready to use modular systems.
 
 #### Option 1: Unity Package Manager via OpenUPM (Recommended)
 
-![openUPM install guide](./Images/openupm-info.png)
+![openUPM install guide](./Images~/openupm-info.png)
 
 #### Option 2: Unity Package Manager via Git URL
 
