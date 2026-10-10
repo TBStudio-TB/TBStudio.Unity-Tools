@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.5] - 2026-10-10
+
+### Changed
+
+- Added missing file.
+
 ## [0.1.4] - 2026-10-10
 
 ### Changed
