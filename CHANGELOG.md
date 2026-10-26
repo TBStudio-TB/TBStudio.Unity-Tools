@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1] - 2026-10-26
+
+### Changed
+
+- Fixed error of the update.
+
 ## [0.2.0] - 2026-10-26
 
 ### Added
