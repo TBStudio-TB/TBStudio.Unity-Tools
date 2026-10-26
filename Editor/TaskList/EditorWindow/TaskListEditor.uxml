@@ -1,0 +1,37 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.tbstudio.tools/Editor/TaskList/Editor%20Window/TaskListEditor.uss?fileID=7433441132597879392&amp;guid=96ab9b476fecf9f49b52b49b3cd879fa&amp;type=3#TaskListEditor"/>
+    <Style src="project://database/Assets/Editor/SharedEditorLayouts/root.uss?fileID=7433441132597879392&amp;guid=b74bbb0eae29a3b42addf1d0e75596ed&amp;type=3#root"/>
+    <ui:VisualElement name="root-container" class="root--expanded">
+        <ui:Label text="Task List" name="window-title-header" class="window__header"/>
+        <ui:VisualElement name="load-tasks-container" class="container">
+            <ui:Label text="Load Tasks List" name="load-tasks-header" class="container__header"/>
+            <ui:VisualElement name="load-tasks-layout-container" class="container--layout-row">
+                <uie:ObjectField label="" name="load-tasks-object-field" class="load-tasks__objectfield"/>
+                <ui:Button text="Load Tasks" name="load-tasks-button" class="load-tasks__button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="search-task-container" class="container">
+            <ui:Label text="Search Tasks" name="search-task-header" class="header container__header"/>
+            <uie:ToolbarSearchField enabled="true" name="search-task-search-field" class="searchfield search-task-searchfield"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="add-task-container" class="container">
+            <ui:Label text="Add New Task" name="add-task-header" class="header container__header"/>
+            <ui:VisualElement name="add-task-layout-container" class="container--layout-row">
+                <ui:TextField placeholder-text="New Task..." name="add-tast-text-field" class="txt add-task__textfield"/>
+                <ui:Button text="Add" name="add-task-button" enabled="true" class="btn--row add-task__button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="display-tasks-container" class="container container--expanded container--border">
+            <ui:Label text="Current Tasks" name="display-tasks-header" class="header container__header container__header--spaced"/>
+            <ui:ScrollView name="display-tasks-scroll-view" class="border container--expanded"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="tracking-tasks-container" class="container">
+            <ui:Button text="Save Progress" name="save-tasks-button" class="save-tasks__button"/>
+            <ui:Label text="Progress" name="progress-header" class="header container__header container__header--spaced" style="padding: 0;"/>
+            <ui:ProgressBar value="0" title="---%" name="tasks-progress-bar" high-value="1" class="task__progressbar"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="notifications-container" class="container container--border">
+            <ui:Label text="Notification Text" name="notifications-label" class="border notification"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

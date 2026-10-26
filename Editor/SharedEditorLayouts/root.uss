@@ -1,0 +1,73 @@
+.root--expanded {
+    flex-grow: 1;
+}
+
+.window__header {
+    margin-top: 10px;
+    font-size: 16px;
+    -unity-text-align: middle-center;
+    color: rgb(255, 26, 0);
+}
+
+.window__button {
+    min-height: 30px;
+}
+
+.container {
+    margin-top: 2.5%;
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 5%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.container__header {
+    font-size: 14px;
+    -unity-text-align: upper-center;
+    margin-bottom: 5px;
+}
+
+.container__header--spaced {
+    margin-top: 10px;
+}
+
+.container--layout-row {
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.container--expanded {
+    flex-grow: 1;
+}
+
+.container--border {
+    border-left-color: rgb(144, 213, 255);
+    border-right-color: rgb(144, 213, 255);
+    border-top-color: rgb(144, 213, 255);
+    border-bottom-color: rgb(144, 213, 255);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.notification {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    -unity-text-align: middle-center;
+}
+
+.hide {
+    display: none;
+}

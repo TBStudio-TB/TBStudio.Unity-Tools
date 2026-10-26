@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.tbstudio.tools/Editor/TaskList/EditorWindow/TaskItem.uss?fileID=7433441132597879392&amp;guid=9c71c8600b136a340920c97bfd8a6597&amp;type=3#TaskItem"/>
+    <Style src="project://database/Packages/com.tbstudio.tools/Editor/SharedEditorLayouts/root.uss?fileID=7433441132597879392&amp;guid=b74bbb0eae29a3b42addf1d0e75596ed&amp;type=3#root"/>
+    <ui:VisualElement name="task-item-container" class="container--layout-row">
+        <ui:Toggle label="" name="task-status-toggle" value="false"/>
+        <ui:Label text="Label" name="task-name-label"/>
+    </ui:VisualElement>
+</ui:UXML>

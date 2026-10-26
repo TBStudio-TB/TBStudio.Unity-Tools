@@ -14,6 +14,7 @@ A tool with editor tools and ready to use modular systems.
 ## ✨ Key Features
 
 - **Editor Task List:** Keep track of task in the unity editor.
+- **Project Builder:** Build you project as seperated apps testing and public release (2 versions on 1 device).
 - **Performance-First:** Designed with low overhead and zero GC allocations in hot loops.
 
 ---
@@ -24,7 +25,18 @@ A tool with editor tools and ready to use modular systems.
 
 #### Option 1: Unity Package Manager via OpenUPM (Recommended)
 
-![openUPM install guide](./Images~/openupm-info.png)
+1. Open **Edit > Project Settings > Package Manager**
+2. add a new scope Registry (or edit the existing OpenUPM entry):
+   - Name: package.openupm.com
+   - URL: https://package.openupm.com
+   - Scope(s): com.tbstudio.be
+3. Click **Save** or **Apply**
+4. Open **Window > Package Manager**
+5. Click **+**
+6. Select **Add package by name...** or **Add package from git URL..**
+7. Paste **com.tbstudio.tools** into name
+8. Paste The version you want into version (empty give the latest version)
+9. click **Add**
 
 #### Option 2: Unity Package Manager via Git URL
 

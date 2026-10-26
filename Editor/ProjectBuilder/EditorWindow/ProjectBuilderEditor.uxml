@@ -1,0 +1,34 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.tbstudio.tools/Editor/ProjectBuilder/EditorWindow/ProjectBuilderEditor.uss?fileID=7433441132597879392&amp;guid=37f1c4d0e86336240a8c6ab615d2e166&amp;type=3#ProjectBuilderEditor"/>
+    <Style src="project://database/Packages/com.tbstudio.tools/Editor/SharedEditorLayouts/root.uss?fileID=7433441132597879392&amp;guid=b74bbb0eae29a3b42addf1d0e75596ed&amp;type=3#root"/>
+    <ui:VisualElement name="root-container" class="root--expanded">
+        <ui:Label text="Platform Builder" name="window-title-header" class="window__header" style="-unity-font-style: bold;"/>
+        <ui:VisualElement name="select-build-config-container" enabled="true" class="container">
+            <ui:Label text="Select Build Config" name="select-build-config-header" class="container__header"/>
+            <uie:ObjectField label="" name="select-build-config-object-field" style="height: 20px;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="change-build-container" class="container">
+            <ui:Label text="Change Build Platform" name="change-build-header" class="container__header"/>
+            <ui:VisualElement name="change-build-layout-container" style="flex-grow: 1; flex-direction: row; flex-shrink: 1;">
+                <ui:DropdownField name="change-build-dropdown" class="change-build__dropdown"/>
+                <ui:Button text="Change" enabled="false" name="change-build-button" class="change-build__button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="Build Overview" name="overview-header" class="window__header"/>
+        <ui:VisualElement name="overview-container" class="container container--expanded container--border">
+            <ui:Label text="Current Platform" name="build-platform-header" class="container__header container__header--spaced"/>
+            <ui:Label text="Loading" name="build-platform-value" class="overview__label"/>
+            <ui:Label text="Current Buildtype" name="build-type-header" class="container__header"/>
+            <ui:Label text="No config " name="build-type-value" parse-escape-sequences="true" class="overview__label"/>
+            <ui:Label text="Current Build File Name" name="build-file-name-header" class="container__header"/>
+            <ui:Label text="No config" name="build-file-name-value" class="overview__label"/>
+            <ui:Label text="Current Build Icon" name="build-icon-header" class="container__header"/>
+            <ui:Label text="No config" name="build-icon-value" enabled="true" parse-escape-sequences="false" class="overview__label"/>
+            <ui:Image name="build-icon-image" class="overview__image" style="width: 64px; height: 64px; flex-grow: 1;"/>
+        </ui:VisualElement>
+        <ui:Button text="Build" name="build-button" enabled="false" class="window__button" style="margin-right: 0%; margin-left: 0%;"/>
+        <ui:VisualElement name="notifications-container" class="container container--border">
+            <ui:Label text="Notification Text" name="notification-label" class="notification"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

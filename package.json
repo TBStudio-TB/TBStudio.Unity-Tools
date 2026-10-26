@@ -1,6 +1,6 @@
 {
   "name": "com.tbstudio.tools",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "displayName": "TB Studio Tools",
   "description": "A tool with editor tools and ready to use modular systems.",
   "unity": "6000.0",

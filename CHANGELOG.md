@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.0] - 2026-10-26
+
+### Added
+
+- Added the Project builder.
+
+### Changed
+
+- Updated the Task list editor window.
+
 ## [0.1.5] - 2026-10-10
 
 ### Changed

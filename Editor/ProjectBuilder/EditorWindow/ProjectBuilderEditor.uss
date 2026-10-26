@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+.change-build__dropdown {
+    width: 70%;
+    min-height: 25px;
+}
+
+.change-build__button {
+    width: 30%;
+    min-height: 25px;
+}
+
+
+
+
+
+.overview__label {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    -unity-text-align: middle-center;
+}
+
+.overview__image {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 50%;
+    height: 50%;
+    aspect-ratio: 1;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

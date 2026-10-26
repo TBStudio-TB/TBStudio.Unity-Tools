@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.load-tasks__objectfield {
+    width: 65%;
+    height: auto;
+    -unity-text-align: middle-left;
+    min-height: 25px;
+    flex-shrink: 0;
+}
+
+.load-tasks__button {
+    width: 30%;
+    height: auto;
+    min-height: 25px;
+    aspect-ratio: auto;
+    flex-shrink: 0;
+}
+
+.search-task-searchfield {
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+}
+
+.add-task__textfield {
+    width: 65%;
+    height: auto;
+    min-height: 25px;
+    flex-shrink: 0;
+}
+
+.add-task__button {
+    width: 30%;
+    height: auto;
+    flex-shrink: 0;
+    min-height: 25px;
+}
+
+.save-tasks__button {
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    flex-shrink: 0;
+}
+
+.task__progressbar {
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    flex-shrink: 0;
+}
+
+
