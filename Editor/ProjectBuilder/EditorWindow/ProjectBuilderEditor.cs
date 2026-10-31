@@ -207,8 +207,9 @@ namespace TBStudio.Tools.Editor.ProjectBuilder
 
             // Apply profile names and bundle identifiers
             PlayerSettings.productName = buildConfig.BuildFileName == "" ? originalProductName : buildConfig.BuildFileName;
-            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, originalAndroidId + buildConfig.BuildType.ToString());
-            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.iOS, originaliOSId + buildConfig.BuildType.ToString());
+            var suffix = "." + buildConfig.BuildType.ToString().ToLower();
+            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, originalAndroidId + suffix);
+            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.iOS, originaliOSId + suffix);
 
             // Confige build targets and paths
             BuildPlayerOptions options = new()
@@ -278,6 +279,7 @@ namespace TBStudio.Tools.Editor.ProjectBuilder
             string[] scenePaths = new string[scenes.Length];
             for (int i = 0; i < scenes.Length; i++)
             {
+                if (!scenes[i].enabled) continue;
                 scenePaths[i] = scenes[i].path;
             }
             return scenePaths;

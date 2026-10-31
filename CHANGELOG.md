@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2] - 2026-10-31
+
+### Changed
+
+- Fixed small error in Identifier
+- Fixed scene error for project builder
+
 ## [0.2.1] - 2026-10-26
 
 ### Changed
