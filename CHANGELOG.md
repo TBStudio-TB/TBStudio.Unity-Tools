@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3] - 2026-11-01
+
+### Changed
+
+- Fixed linux error
+- Fixed scene error for project builder
+
 ## [0.2.2] - 2026-10-31
 
 ### Changed

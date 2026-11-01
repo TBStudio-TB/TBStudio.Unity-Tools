@@ -275,14 +275,10 @@ namespace TBStudio.Tools.Editor.ProjectBuilder
 
         private static string[] GetProjectScenes()
         {
-            EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
-            string[] scenePaths = new string[scenes.Length];
-            for (int i = 0; i < scenes.Length; i++)
-            {
-                if (!scenes[i].enabled) continue;
-                scenePaths[i] = scenes[i].path;
-            }
-            return scenePaths;
+            return EditorBuildSettings.scenes
+                .Where(scene => scene.enabled)
+                .Select(scene => scene.path)
+                .ToArray();
         }
 
         private static string GetBuildPath(BuildTarget target, string baseName, string folderName)
@@ -292,7 +288,7 @@ namespace TBStudio.Tools.Editor.ProjectBuilder
             {
                 BuildTarget.StandaloneWindows or BuildTarget.StandaloneWindows64 => $"{root}/Windows/{baseName}.exe",
                 BuildTarget.StandaloneOSX => $"{root}/Mac/{baseName}.app",
-                BuildTarget.StandaloneLinux64 => $"\"{{root}}/Linux/{baseName}x86_64",
+                BuildTarget.StandaloneLinux64 => $"{root}/Linux/{baseName}.x86_64",
                 BuildTarget.Android => $"{root}/Android/{baseName}.apk",
                 BuildTarget.iOS => $"{root}/iOS_XcodeProject",
                 BuildTarget.WebGL => $"{root}/Web/",
